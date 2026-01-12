@@ -1,4 +1,10 @@
-<!DOCTYPE html>
+I found the problem! There's a small error in your HTML code. The <iframe> tag is missing its closing part.
+Look at this line in your code:
+html<iframe src="https://docs.google.com/forms/d/1_OmFYheLblxdE-nJFbYcgmMDxjPoOA7_o0It-afrs_A/viewform?embedded=true"
+It's incomplete! Here's the corrected version:
+Fixed HTML Code:
+Copy this entire corrected code and replace what's currently in your index.html file:
+html<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -154,8 +160,7 @@
             <p>Complete the form below to receive instant access to our comprehensive salary benchmarking report. This report includes detailed compensation data for claims handlers, adjusters, managers, and senior leadership roles across the insurance sector.</p>
 
             <div class="form-container">
-                <!-- REPLACE THIS URL WITH YOUR GOOGLE FORM EMBED URL -->
-                <iframe src="https://docs.google.com/forms/d/1_OmFYheLblxdE-nJFbYcgmMDxjPoOA7_o0It-afrs_A/viewform?embedded=true"
+                <iframe src="https://docs.google.com/forms/d/1_OmFYheLblxdE-nJFbYcgmMDxjPoOA7_o0It-afrs_A/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             </div>
         </div>
 
